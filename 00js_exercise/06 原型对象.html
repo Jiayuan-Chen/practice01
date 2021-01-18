@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // 当函数以构造函数的形式调用时，他所创建的对象都会有一个隐函数性，指向该构造函数的原型对象，用__proto__来访问
+        function MyClass(){
+            
+        }
+
+        // Person.prototype.sayName = function(){
+        //     alert("hello这里是"+this.name);
+        // };
+
+        MyClass.prototype.a = 111;
+
+
+        var mc = new MyClass();
+        var mc2 = new MyClass();
+
+        mc.a = "lalala";
+
+        console.log(mc.__proto__ == MyClass.prototype);
+        console.log(mc.a);
+        // mc.sayName();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

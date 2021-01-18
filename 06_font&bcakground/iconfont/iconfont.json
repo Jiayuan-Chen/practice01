@@ -1,0 +1,51 @@
+{
+  "id": "1904251",
+  "name": "one",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7766715",
+      "name": "icon_alipay_line",
+      "font_class": "icon_alipay_line",
+      "unicode": "eb90",
+      "unicode_decimal": 60304
+    },
+    {
+      "icon_id": "7766716",
+      "name": "icon_addressbook",
+      "font_class": "icon_addressbook",
+      "unicode": "eb8f",
+      "unicode_decimal": 60303
+    },
+    {
+      "icon_id": "7766721",
+      "name": "icon_camera",
+      "font_class": "icon_camera",
+      "unicode": "eb91",
+      "unicode_decimal": 60305
+    },
+    {
+      "icon_id": "7766729",
+      "name": "icon_community_line",
+      "font_class": "icon_community_line",
+      "unicode": "eb93",
+      "unicode_decimal": 60307
+    },
+    {
+      "icon_id": "7766730",
+      "name": "icon_discovery",
+      "font_class": "icon_discovery",
+      "unicode": "eb94",
+      "unicode_decimal": 60308
+    },
+    {
+      "icon_id": "7766742",
+      "name": "icon_GPS",
+      "font_class": "icon_GPS",
+      "unicode": "eb95",
+      "unicode_decimal": 60309
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function isOU(num){
+            // if(num % 2 ==0){
+            //     return true;
+            // }
+            // else{
+            //     return false;
+            // }
+            return num % 2 == 0;
+        }
+        // var result = isOU(41);
+        // console.log("result=" + result);
+
+
+// 圆周率
+        // function mianji(r){
+        //     return 3.14*r*r;
+        // }
+        // var result1 = mianji(2);
+        // console.log("result1=" + result1);
+
+
+        function sayHello(o){
+            console.log("my name is "+o.name+",my age is "+o.age+",my gender is "+o.gender);
+        }
+
+        var obj = {
+            name:"swk",age : 10, gender: "man"
+        }
+
+        // sayHello(obj);
+
+        function fun(a){
+            a(obj);
+        }
+        fun(sayHello);
+
+        // 立即执行函数
+        // (function(a ,b){
+        //     console.log("a="+a);
+        //     console.log("b="+b);
+        // })(123,345);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

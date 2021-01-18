@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻列表</title>
+
+    <style>
+
+        /* 统一去除下划线 */
+        a{
+            text-decoration: none;
+        }
+        /* 设置容器的样式 */
+        .news-wrapper{
+            width: 300px;
+            height: 360px;
+            margin: 50px auto;
+            /* 设置背景颜色，显示轮廓 */
+            background-color: #fff;
+            /* 显示上边框 */
+            border-top: #ddd 1px solid;
+        }
+        .news-title{
+            /* 为了文字和边框宽度一致，要把h2转化成行内块元素 */
+            display: inline-block;
+            height: 30px;
+            border-top: red 1px solid;
+            /* 通过margin-top将h2上移，盖住上边框*/
+            margin-top: -1px;
+            padding-top: 10px;
+        }
+        .news-title a{
+            color: #404068;
+            /* 加粗 */
+            font-weight: bold;
+        }
+        /* 设置图片容器高度 */
+        .news-img{
+            height: 150px;
+        }
+        /* 设置图片文字效果 */
+        .news-img .img-title{
+            margin-top: -33px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            padding-left: 30px;
+        }
+        .news-list{
+            margin-top: 20px;
+            padding-left: 15px;
+        }
+        .news-list li{
+            /* 设置下外边距 */
+            margin-bottom: 10px;
+        }
+        .news-list li a{
+            color: #666666;
+            font-size: 15px;
+        }
+        .news-list li a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="news-wrapper">
+        <!-- 创建一个标题标签 -->
+        <h2 class="news-title">
+           <a href="#">体育</a>
+        </h2>
+        <div class="news-img">
+            <a href="#">
+                <img src="./img/04.jpg" alt="姚明">
+                <h3 class="img-title">
+                    CBA复赛为新冠逝者默哀 姚明握紧
+                </h3>
+            </a>
+        </div>
+        <ul class="news-list">
+            <li>
+                <a href="#">乔治:我爱LA 喜欢和LBJ一起打球</a>
+            </li>
+            <li>
+                <a href="#">格林:3年前降薪就在等KD</a>
+            </li>
+            <li>
+                <a href="#">塔克4000双鞋让保罗羡慕嫉妒</a>
+            </li>
+            <li>
+                <a href="#">CBA下季新赛制:常规赛4组循环</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

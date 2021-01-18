@@ -1,0 +1,264 @@
+/* 主页index样式表 */
+.out-nav{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #313330;
+}
+/* 设置字体大小颜色 */
+.out-nav a{
+    font-size: 12px ;
+    color: #b0b0b0;
+    display: block;
+}
+.line{
+    width: 1px;
+    height: 13px;
+    margin: 14px 8px 13px 8px;
+    background-color: #424242;
+}
+
+.shopping-cart{
+    margin-left: 26px;
+    position: relative;
+    z-index: 9999;
+}
+.left-nav a:hover,.user-info a:hover{
+    color: #fff;
+}
+.shopping-cart a{
+    background-color: #3d4141;
+    width: 120px;
+    text-align: center;
+    /* 开启相对定位设置层级，覆盖下拉框的上阴影 */
+    position: relative;
+    z-index: 5;
+}
+.shopping-cart i{
+    margin-right: 3px;
+}
+/* !!!!!给父元素设置hover */
+.shopping-cart:hover a{
+    color: #ff6700;
+    background-color: white;
+}
+.shopping-cart:hover i{
+    color: #ff6700;
+}
+/* 购物车下拉框 */
+.notice{
+    /* display: none; */
+    position: absolute;
+    width: 316px;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+    right: 0;
+    transition: height 0.3s;
+}
+.notice .aa{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    z-index: 3;
+}
+.shopping-cart:hover .notice,
+.notice:hover{
+    display: block;
+    height: 100px;
+}
+
+.app{
+    position: relative;
+}
+/* 设置小三角 */
+.app::after{
+    content: '';
+    position: absolute;
+    display: none;
+    width: 0;
+    height: 0;
+    border: 8px transparent solid;
+    border-top: none;
+    border-bottom-color: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+/* 鼠标移入出现下拉框 */
+.app:hover .qrcode,
+.app:hover::after{
+    display: block;
+    height: 148px;
+}
+/* 设置下拉框 */
+.app .qrcode{
+    /* display: none; */
+    position: absolute;
+    left: -40px;
+    width: 124px;
+    /* height: 148px; */
+    height: 0;
+    overflow: hidden;
+    /* 不设置行高就会继承他父元素的行高 */
+    line-height: 1;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    /* transition用于为样式设置过度效果 */
+    transition: height 0.3s;
+    z-index: 9999;
+}
+.app .qrcode img{
+    width: 90px;
+    margin: 17px;
+    margin-bottom: 10px;
+}
+.app .qrcode span{
+    font-size: 14px;
+    color: #000;
+}
+.header-wrapper{
+    position: relative;
+}
+
+.header{
+    height: 100px;
+}
+/* 设置图标 */
+.header .logo{
+    width: 55px;
+    height: 55px;
+    position: relative;
+    margin-top: 22.5px;
+    overflow: hidden;
+    /* 隐藏logo中的文字 */
+    text-indent: -999px;
+}
+/* 统一设置logo超链接 */
+.header .logo a{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: #ff6700;
+    left: 0;
+    transition: left .2s;
+    
+    /* 背景图，不用在index里加img了 */
+    background-image: url(../img/mi-logo.png);
+    background-position: center;
+}
+/* 设置home图片 */
+.header .logo .home{
+    background-image: url(../img/mi-home.png);
+    left: -55px;
+}
+/* 鼠标移入后图片切换效果 */
+.header .logo:hover .mi{
+    left: 55px;
+}
+.header .logo:hover .home{
+    left: 0;
+}
+/* 设置头部中间导航条 */
+.nav-wrapper{
+    float: left;
+    /* width: 850px; */
+    margin-left: 7px;
+    padding-left: 58px;
+}
+.nav-wrapper .header-nav > li{
+    float: left;
+    margin-right: 20px;
+}
+/* 设置左侧导航条样式 */
+.left-menu{
+    width: 224px;
+    height: 460px;
+    background-color: rgba(0,0,0,.6);
+}
+/* 设置超链接字体大小 */
+.nav-wrapper .header-nav a{
+    display: block;
+    font-size: 16px;
+    line-height: 100px;
+}
+/* 隐藏全部商品 */
+.nav-wrapper .header-nav .all-goods{
+    visibility: hidden;
+}
+/* 超链接鼠标移入 */
+.nav-wrapper .header-nav a:hover{
+    color: red;
+}
+
+/* 商品信息下拉框 */
+
+.nav-wrapper .goods-info{
+    /* height: 228px; */
+    height: 0;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transition: height 0.3s;
+    /* border-top: 1px solid rgb(224,224,224);
+    box-shadow: 0 5px 3px rgba(0,0,0,.2); */
+    z-index: 9999;
+}
+/* 选中all-goods不弹出 */
+/* .header-nav li:not(:first-child):not(:nth-child(9)):not(:nth-child(10)):hover ~ .goods-info,
+.goods-info:hover */
+    /* 建议用类 */
+.header-nav .show-goods:hover ~ .goods-info,
+ .goods-info:hover{
+    height: 228px;
+    border-top: 1px solid rgb(224,224,224);
+    box-shadow: 0 5px 3px rgba(0,0,0,.2);
+}
+/* 设置搜素框 */
+.search-wrapper{
+    width: 296px;
+    height: 50px;
+    background-color: #fff;
+    float: right;
+    margin-top: 25px;
+    /* border: 1px solid rgb(224,224,224); */
+}
+.search-wrapper .search-inp{
+    box-sizing: border-box;
+    width: 244px;
+    height: 50px;
+    float: left;
+    border: none;
+    border: 1px solid rgb(224,224,224);
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+}
+/* 设置input获取焦点后的样式 */
+.search-wrapper .search-inp:focus,
+.search-wrapper .search-inp:focus + button{
+    border-color: #ff6700;
+}
+.search-wrapper .search-btn{
+    float: left;
+    height: 50px;
+    width: 52px;
+    padding: 0;
+    border: none;
+    border: 1px solid rgb(224,224,224);
+    background-color: #fff;
+    font-size: 18px;
+    color: #616161;
+    border-left: none;
+}
+.search-wrapper .search-btn:hover{
+    background-color: #ff6700;
+    color: #fff;
+    border: none;
+}

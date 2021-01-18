@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form的属性
+            action 表单要提交的服务器的地址 -->
+    <form action="target.html">
+        <!-- 文本框 
+            注意：数据要提交到服务器，必须指定一个name属性-->
+        文本框<input type="text" name="username">
+        <br><br>
+        <!-- 
+            密码框
+         -->
+        密码框<input type="password" name="password">
+        <br><br>
+        <!-- 
+            单选按钮
+                像这种选择按钮，必须指定一个value属性,会作为用户填写的值发送给服务器
+                checked 可设置单选按钮默认选中
+         -->
+         单选按钮<input type="radio" name="o" value="a">
+                <input type="radio" name="o" value="b" checked>
+         <br><br>
+         <!-- 
+             多选框
+          -->
+          多选框<input type="checkbox" name="qq" value="1">
+                <input type="checkbox" name="qq" value="2">
+                <input type="checkbox" name="qq" value="3" checked>
+          <br><br>
+
+          <!-- 下拉列表 -->
+          <select name="lala">
+              <option value="11">选择一</option>
+              <!-- 默认选中 -->
+              <option selected value="22">选择二</option>
+              <option value="33">选择三</option>
+          </select>
+          <br><br>
+        <!-- 提交按钮 -->
+        <input type="submit" value="注册">
+    </form>
+</body>
+</html>

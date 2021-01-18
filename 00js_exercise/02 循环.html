@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02</title>
+
+    <script>
+        // var i = 1000 , t=1;
+        // while(i <= 5000){
+        //     i *= 1.05;
+        //     t++;
+        //     // console.log(t +":"+ i +"元");
+        // }
+        // alert(t);
+        
+
+
+        // while(true){
+        //     var score = prompt("请输入小明的成绩：");
+        //     if(score >= 0 && score<= 100){
+        //         break;
+        //     }
+        //     alert("请输入正确的成绩！");
+        // }
+        
+        // if(score > 100 || score < 0 || isNaN(score)){
+        //     alert("nonono!")
+        // }
+        // else {
+        //     if (score == 100) {
+        //         alert("奖励一台BMW");
+        //     }
+        //     else if (score >= 80) {
+        //         alert("奖励一台手机");
+        //     }
+        //     else if (score >= 60) {
+        //         alert("奖励一本习题册");
+        //     }
+        //     else {
+        //         alert("none");
+        //     }
+        // }
+
+    //打印1-100之间7的倍数的和
+    // var count = 0;
+    // for(var i = 1,sum = 0;i<=100;i++){
+    //         if(i % 7 == 0){
+    //             sum += i;
+    //             count++;
+    //         }
+    // }
+    // console.log("总和："+sum);
+    // console.log("次数："+count);
+
+
+    // 水仙花数
+    
+    // for(var i = 100;i < 1000; i++){
+    //     var bai = parseInt(i/100);
+    //     var shi = parseInt(i%100/10);
+    //     var ge = i % 10;
+
+    //     if(bai*bai*bai+shi*shi*shi+ge*ge*ge == i){
+    //         console.log(i);
+    //     }
+    // }
+
+
+    // 判断质数
+    // var num = prompt("plesse input a number:");
+    // var flag = true;
+    // if(num <= 1){
+    //     alert("please input right number!");
+    // }
+    // else{
+    //     for( var i = 2; i<num;i++){
+    //         // 如果num能被i整除，则一定不是质数
+    //         if(num % i == 0){
+    //             flag = false;
+    //         }
+    //     }
+    //     if(flag){
+    //         alert(num+"是质数");
+    //     }
+    //     else{
+    //         alert("不是质数");
+    //     }
+    // }
+
+
+    // 99乘法表
+    for(var j=1;j<10;j++){
+        for(var i=1;i<=j;i++){
+            document.write("<span>"+i+"*"+j+"="+i*j+"</span>");
+        }
+        document.write("<br />");
+    }
+
+    </script>
+
+    <style type="text/css">
+        span{
+            display: inline-block;
+            width: 80px;
+        }
+    </style>
+
+    
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片列表</title>
+
+    <style>
+        .box{
+            width: 600px;
+            height: 600px;
+            background-color: rgb(186, 186, 226);
+            background-image: url("./img/cute.jpg");
+            background-repeat: no-repeat;
+            padding: 10px;
+
+            /* background-origin: border-box; */
+
+            /* 图片尺寸，第一个宽，第二个高，如果只写一个。则第二个值auto（等比放缩） 
+                       cover 图片的比例不变，将元素铺满
+                       contain 图片的比例不变，将图片在元素中完整显示*/
+            background-size: 100% auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

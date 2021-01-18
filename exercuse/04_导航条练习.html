@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航条练习</title>
+    <link rel="stylesheet" href="./css/recet.css">
+    <style>
+        .hole{
+            width: 1205px;
+            height: 48px;
+            background-color: #dddddd;
+            margin: 100px auto;
+            
+        }
+        .hole .item{
+            
+            /* 设置li高度，并且让他垂直居中 */
+            height: 48px;
+            line-height: 48px;
+            float: left;
+        }
+        .item a{
+            /* 把a转换为块元素 */
+            display: block;
+            font-size: 18px;
+            text-decoration: none;
+            color: #777777;
+            padding: 0 42px;
+        }
+        .hole a:hover{
+            background-color: #3f3f3f;
+            color: #e8e7e3;
+        }
+    </style>
+</head>
+<body>
+    <ul class="hole">
+        <li class="item">
+            <a href="#">HTML/CSS</a>
+        </li>
+        <li class="item">
+            <a href="#">Browser Side</a>
+        </li>
+        <li class="item">
+            <a href="#">Server Side</a>
+        </li>
+        <li class="item">
+            <a href="#">Programming</a>
+        </li>
+        <li class="item">
+            <a href="#">XML</a>
+        </li>
+        <li class="item">
+            <a href="#">Web Building</a>
+        </li>
+        <li class="item">
+            <a href="#">Refrence</a>
+        </li>
+    </ul>
+</body>
+</html>
